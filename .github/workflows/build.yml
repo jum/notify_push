@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - develop
+      - local_deploy
   workflow_dispatch:
 
 env:
