@@ -28,8 +28,8 @@ static RANDOM_STATE: OnceBox<RandomState> = OnceBox::new();
 /// the user backend allows in user ids.
 #[derive(Clone, Copy, Eq, PartialEq)]
 enum IdKind {
-    User = 0,
-    AnonymousSession = 1,
+    User,
+    AnonymousSession,
 }
 
 #[derive(Clone, Eq, PartialEq, Hash)]
